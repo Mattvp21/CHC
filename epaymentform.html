@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex">
+<title>Community Health Connections, Inc.</title>
+<style media="screen">
+	body {
+		font-family: 'Verdana','Arial','Helvetica', sans-serif;
+		color: #000000;
+		background-color: #D4D7E4;
+	}
+	
+	
+	table {
+		border: none;
+		border-spacing: 0px;
+	}
+	a,
+	a:visited,
+	a:active {
+		color: #000080;
+	}
+
+	.container {
+            position: relative;
+            max-width: 600px;
+            height: 500px;
+            padding: 50px;
+            color: #555;
+            text-align: center;
+        }
+        
+        .lang-link {
+            text-transform: uppercase;
+            color: #fff;
+            text-decoration: none;
+            padding: 0 15px;
+            font-weight: bold;
+            background: #D4D7E4;
+            font-size: 18px;
+        }
+        .lang-link.active {
+            background: #C4C7D4;
+        }
+</style>
+
+</head>
+
+<body>
+	
+
+<form name="epayform" action='[UMformURL]' method="POST" onSubmit="return submitform()">
+<input type="hidden" name="UMsubmit" value="1">
+<input type="hidden" name="UMkey" value="[UMkey]">
+<input type="hidden" name="UMredirDeclined" value="[UMredirDeclined]">
+<input type="hidden" name="UMredirApproved" value="[UMredirApproved]">
+<input type="hidden" name="UMhash" value="[UMhash]">
+<input type="hidden" name="UMmd5hash" value="[UMmd5hash]">
+<input type="hidden" name="UMmd5key" value="[UMmd5key]">
+<input type="hidden" name="UMcommand" value="[UMcommand]">
+<input type="hidden" name="UMamount" value="[UMamount]">
+<input type="hidden" name="UMtax" value="[UMtax]">
+<input type="hidden" name="UMinvoice" value="[UMinvoice]">
+<input type="hidden" name="UMcustid" value="[UMcustid]">
+<input type="hidden" name="UMrecurring" value="[UMrecurring]">
+<input type="hidden" name="UMaddcustomer" value="[UMaddcustomer]">
+<input type="hidden" name="UMbillamount" value="[UMbillamount]">
+<input type="hidden" name="UMcustreceipt" value="[UMcustreceipt]">
+<input type="hidden" name="UMschedule" value="[UMschedule]">
+<input type="hidden" name="UMnumleft" value="[UMnumleft]">
+<input type="hidden" name="UMstart" value="[UMstart]">
+<input type="hidden" name="UMexpire" value="[UMexpire]">
+<input type="hidden" name="UMdescription" value="[UMdescription]">
+<input type="hidden" name="UMechofields" value="[UMechofields]">
+<input type="hidden" name="UMformString" value="[UMformString]">
+[UMlineitems]
+[UMcustomfields]
+<div>
+	
+	<table  style="width:700px; margin: 0 auto; font-size:12px;" cellpadding="4">
+		<tr>
+			
+			<td style="background-color:#9999FF;" colspan="2">
+				
+				
+				<div id="google_translate_element"></div>
+				<div class="lang-wrap" hidden>
+					<a href="#" language="english" class="lang-link active">EN</a>
+					<a href="#" language="spanish" class="lang-link">ES</a>
+					<a href="#" language="portuguese" class='lang-link'>PT</a>
+				</div>
+				<b>
+					<span style="color: #FFFFFF; font-size: 2rem;">Community Health Connections, Inc.</span>
+					<span class="secure" style="color: #FFFFFF; font-size: 1.15rem"><br>Secure Payment Form</span>
+				</b>
+			</td>
+		</tr>
+		
+	<!-- Image Banner -->
+		<tr>
+			<td style="background-color:#C4C7D4;" colspan="2">
+				<p style="text-align:center;">
+				<img alt="visa card" src="/images/visa.gif" width="44" height="28" style="margin:0 3px">			
+				<img alt="master card" src="/images/mastercard.gif" width="44" height="28" style="margin:0 3px">			
+				<img alt="american express" src="/images/amex.gif" width="44" height="28" style="margin:0 3px">			
+				<img alt="discover card" src="/images/discover.gif" width="44" height="28" style="margin:0 3px">									</td>
+		</tr>
+	<!-- Payment Summary Section -->
+		<tr>
+			<td style="background-color:#F0F0F0;" colspan="2">&nbsp;</td>
+		</tr>
+
+		<tr>
+			<td style="background-color:#C4C7D4;" colspan="2">
+				<b>
+					<span class="summary">Payment Summary:</span>
+				</b>
+			</td>
+		</tr>
+		<tr>
+			<td style="background-color:#F0F0F0; width: 234px; text-align: right;">
+				<span class="paydate" style="font-size: .8rem;">Payment Date:</span>
+			</td>
+			<td style="background-color:#F0F0F0; width:450px;">[UMorderdate]
+			</td>
+		</tr>
+		<tr>
+			<td style="background-color:#F0F0F0; width: 234px; text-align: right;">
+				<span class="payamount" style="font-size: .8rem;">Payment Amount:</span>
+			</td>
+			<td style="background-color:#F0F0F0; width:450px;">
+				<input type="text" name="UMamount" maxlength="25" value="[UMamount]" aria-required="true" required></td>
+		</tr>
+		<tr>
+			<td style="background-color:#F0F0F0; width: 234px; text-align: right;">
+				<span  class='chart' style="font-size: .8rem;">Chart #:</span>
+			</td>
+			<td style="background-color:#F0F0F0; width:450px;">
+				<input type="text" name="UMinvoice" maxlength="25" value="[UMinvoice]" aria-required="true" required></td>
+		</tr>
+		
+		<tr>
+			<td style="background-color:#F0F0F0; width: 234px; text-align: right;">
+				<span class="custip" style="font-size: .8rem;">Customer IP: </span>
+			</td>
+			<td style="background-color:#F0F0F0; width:450px;">[UMclientip]&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="background-color:#F0F0F0; width: 234px; text-align: right;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			</td>
+			<td style="background-color:#F0F0F0; width:450px;">&nbsp;</td>
+		</tr>
+<!--CREDIT CARD SECTION-->
+[svp]
+<tr>
+	<td style="background-color:#C4C7D4;" colspan="2"><b><span>Secure Vault Payment
+	Information:</span>
+	[hascreditcards]&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" name="action" value="Pay By Credit Card">[/hascreditcards]
+	</b></td>
+</tr>
+<tr>
+	<td colspan="2">
+		<input type="hidden" name="paybysvp" value="1">
+	</td>
+</tr>
+<tr><td colspan=2>
+	Secure Vault Payment allows you to pay directly using your online banking.  Select your bank from the list below.
+	<a href="http://securevaultpayments.org/">Learn More</a>
+</td></tr>
+<tr>
+	<td style="background-color:#F0F0F0; width: 234px; text-align: right;"><span style="font-size: .8rem;">Select your bank:
+	</span></td>
+	<td style="background-color:#F0F0F0; width:450px;"><select name="UMsvpbank">[SVPbanklist]</select></td>
+</tr>
+[/svp]
+[creditcard]
+		<tr>
+			<td style="background-color:#C4C7D4;" colspan="2">
+				<b>
+					<span class="ccinfo">Credit Card Information:</span> 
+				</b>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<input type="hidden" name="paybycredit" value="1">
+			</td>
+		</tr>
+<!--CARD DROPDOWN MENU-->
+		<tr>
+			<td style="background-color:#F0F0F0; width: 234px; text-align: right;">
+				<span class="cctype" style="font-size: .8rem;">Card Type:</span>
+			</td>
+			<td style="background-color:#F0F0F0; width:450px;">
+				<p><select size="1" name="payment_type">
+						<option value="Visa">Visa</option>				
+						<option value="MasterCard">MasterCard</option>				
+						<option value="American Express">American Express</option>				
+						<option value="Discover">Discover</option>												
+				</select></p>
+			</td>
+		</tr>
+<!--CREDIT CARD DETAILS-->
+		<tr>
+			<td style="background-color:#F0F0F0; width: 234px; text-align: right;">
+				<span class="ccname" style="font-size: .8rem;">Name as on Card:</span>
+			</td>
+			<td style="background-color:#F0F0F0; width:450px;">
+			<input type="text" name="UMname" maxlength="25" value="[UMname]" aria-required="true" required></td>
+		</tr>
+		<tr>
+			<td style="background-color:#F0F0F0; width: 234px; text-align: right;">
+				<span class="ccaddress" style="font-size: .8rem;">Card Billing Address:</span>
+			</td>
+			<td style="background-color:#F0F0F0; width:450px;">
+			<input type="text" name="UMstreet" maxlength="25" value="[UMstreet]"></td>
+		</tr>
+		<tr>
+			<td style="background-color:#F0F0F0; width: 234px; text-align: right;">
+				<span class="cczip" style="font-size: .8rem;">Card Billing Zipcode:</span>
+			</td>
+			<td style="background-color:#F0F0F0; width:450px;">
+			<input type="text" name="UMzip" maxlength="10" value="[UMzip]"></td>
+		</tr>
+		<tr>
+			<td style="background-color:#F0F0F0; width: 234px; text-align: right;">
+				<span class="ccnumber" style="font-size: .8rem;">Card Number:</span>
+			</td>
+			<td style="background-color:#F0F0F0; width:450px;">
+			<input type="text" name="UMcard" minlength="13" maxlength="16"></td>
+		</tr>
+		<tr>
+			<td style="background-color:#F0F0F0; width: 234px; text-align: right;">
+				<span class="ccexp" style="font-size: .8rem;">Card Expiration Date: </span>
+			</td>
+			<td style="background-color:#F0F0F0; width:450px;">
+			<input type="text" name="UMexpir" maxlength="4"> MMYY</td>
+		</tr>
+		<tr>
+			<td style="background-color:#F0F0F0; width: 234px; text-align: right;">
+				<span>
+					<span class="cardid" style="font-size: .8rem;">
+						Card ID (CVV2/CID) Number:<br>
+						&nbsp;
+					</span>
+					<span >
+						[<a target="_blank"  href="/cvv.htm"><span class="ccwhatis">What is the CardID?</span></a>]
+					</span></span>
+			</td>
+			<td style="background-color:#F0F0F0; width:450px;">
+				<input type="text" name="UMcvv2" maxlength="5">
+			</td>
+		</tr>
+		<tr>
+			<td style="background-color:#F0F0F0;" colspan="2">&nbsp;&nbsp;&nbsp; </td>
+		</tr>
+[/creditcard]
+<!--BILLING INFORMATION-->
+		<tr>
+			<td style="background-color:#C4C7D4;" colspan="2">
+				<span class="billinfo" style="font-weight: 700;">Billing Information:</span></td>
+		</tr>
+		<tr>
+			<td style="background-color:#F0F0F0; width: 234px; text-align: right;">
+				<span class="fname" style="font-size: .8rem;">First Name:</span>
+			</td>
+			<td style="background-color:#F0F0F0; width:450px;">
+			<input type="text" name="UMbillfname" size="20" value="[UMbillfname]"></td>
+		</tr>
+		<tr>
+			<td style="background-color:#F0F0F0; width: 234px; text-align: right;">
+				<span class="lname" style="font-size: .8rem;">Last Name:</span>
+			</td>
+			<td style="background-color:#F0F0F0; width:450px;">
+				<input type="text" name="UMbilllname" size="27" value="[UMbilllname]">
+			</td>
+		</tr>
+		<tr>
+			<td style="background-color:#F0F0F0; width: 234px; text-align: right;">
+				<span class="billaddress" style="font-size: .8rem;">Address:</span>
+			</td>
+			<td style="background-color:#F0F0F0; width:450px;">
+			<input type="text" name="UMbillstreet" size="25" value="[UMbillstreet]"></td>
+		</tr>
+		<tr>
+			<td style="background-color:#F0F0F0; width: 234px; text-align: right;">
+				<span class="billaddress2" style="font-size: .8rem;">Address Line 2(iIf not applicable, type N/A):</span>
+			</td>
+			<td style="background-color:#F0F0F0; width:450px;">
+				<input type="text" name="UMbillstreet2" size="20" value="[UMbillstreet2]" required=false>
+			</td>
+		</tr>
+		<tr>
+			<td style="background-color:#F0F0F0; width: 234px; text-align: right;">
+				<span style="font-size: .8rem;">City:</span>
+			</td>
+			<td style="background-color:#F0F0F0; width:450px;">
+				<input class="city" type="text" name="UMbillcity" size="29" value="[UMbillcity]">
+			</td>
+		</tr>
+		<tr>
+			<td style="background-color:#F0F0F0; width: 234px; text-align: right;">
+				<span class="state" style="font-size: .8rem;">State:</span>
+			</td>
+			<td style="background-color:#F0F0F0; width:450px;">
+				<input type="text" name="UMbillstate" size="20" value="[UMbillstate]">
+			</td>
+		</tr>
+		<tr>
+			<td style="background-color:#F0F0F0; width: 234px; text-align: right;">
+				<span class="zip" style="font-size: .8rem;">Zip:</span>
+			</td>
+			<td style="background-color:#F0F0F0; width:450px;">
+				<input type="text" name="UMbillzip" size="11" value="[UMbillzip]">
+			</td>
+		</tr>
+		<tr>
+			<td style="background-color:#F0F0F0; width: 234px; text-align: right;">
+				<span class="country" style="font-size: .8rem;">Country:</span>
+			</td>
+			<td style="background-color:#F0F0F0; width:450px;">
+				<input type="text" name="UMbillcountry" size="26" value="[UMbillcountry]">
+			</td>
+		</tr>
+		<tr>
+			<td style="background-color:#F0F0F0; width: 234px; text-align: right;">
+				<span class="phonenumber" style="font-size: .8rem;">Phone Number:</span>
+			</td>
+			<td style="background-color:#F0F0F0; width:450px;">
+				<input type="text" name="UMbillphone" size="20" value="[UMbillphone]">
+			</td>
+		</tr>
+		<tr>
+			<td style="background-color:#F0F0F0; width: 234px; text-align: right;">
+				<span class="email" style="font-size: .8rem;">Email Address:</span>
+			</td>
+			<td style="background-color:#F0F0F0; width:450px;">
+				<input type="text" name="UMemail" size="20" value="[UMemail]">
+			</td>
+		</tr>
+		<tr>
+			<td style="background-color:#F0F0F0;" colspan="2">
+				<span style="font-size: .8rem;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+			</td>
+		</tr>
+		
+		<tr>
+			<td style="background-color:#F0F0F0;" colspan="2">
+				<p style="text-align: center;">
+					<input type="submit" name="submitbutton" value="Process Payment &gt;&gt;">
+				</p>
+				<hr>
+			</td>
+		</tr>
+	</table>
+</div>
+</form>
+</body>
+<script>
+	//PAYMENT BUTTON 
+	var submitted = false;
+	
+	
+	function submitform() {
+		if(submitted) {
+			return false;
+		}
+		submitted=true;
+		document.epayform.submitbutton.value='Please Wait... Processing';
+		return true;
+	}
+	//TEXT FIELDS REQUIRED
+	var requiredFields = document.querySelectorAll('input')
+	
+	for (let index = 0; index < requiredFields.length; index++) {
+		
+		if(requiredFields[index].type === 'text') {
+			requiredFields[index].required = true
+		}
+	}
+
+	//RANDOM INVOICE NUMBER
+	// var date = new Date();
+	// function getRandomInvoiceNumber(n) { 
+	// 	return n < 10 ? '0' + n : n; 
+	// }
+
+	// var random_num = Math.floor(Math.random() * (99999999999 -  10000000000)) + 10000000000;
+	
+	// random_num = date.getFullYear() + getRandomInvoiceNumber(date.getMonth()+1) 
+	// + getRandomInvoiceNumber(date.getDate()) 
+	// + random_num; 
+	
+	// document.forms[0].UMinvoice.value = random_num;
+	// console.log(document.forms[0].UMinvoice.value = random_num)
+
+	//LANGUAGE FUNCTIONALITY
+
+	const langEl = document.querySelector('.lang-wrap');
+    const link = document.querySelectorAll('.lang-link');
+    const secureEl = document.querySelector('.secure');
+    const descrEl = document.querySelector('.summary');
+	const payDateEl = document.querySelector('.paydate');
+	const payAmountEl = document.querySelector('.payamount');
+	const chartEl = document.querySelector('.chart');
+	const ipEl = document.querySelector('.custip');
+	const descriptionEl = document.querySelector('.description');
+	const ccInfoEl = document.querySelector('.ccinfo');
+	const ccType = document.querySelector('.cctype');
+	const ccName = document.querySelector('.ccname');
+	const ccAddress = document.querySelector('.ccaddress');
+	const ccZip = document.querySelector('.cczip');
+	const ccNumber = document.querySelector('.ccnumber');
+	const ccExp = document.querySelector('.ccexp');
+	const ccId = document.querySelector('.cardid');
+	const ccWhatIs = document.querySelector('.ccwhatis');
+	const billInfo = document.querySelector('.billinfo');
+	const fName = document.querySelector('.fname');
+	const lName = document.querySelector('.lname');
+	const billAddress = document.querySelector('.billaddress');
+	const billAddress2 = document.querySelector('.billaddress2');
+	const billState = document.querySelector('.state');
+	const billCountry = document.querySelector('.country');
+	const billZip = document.querySelector('.zip');
+	const phoneNumber = document.querySelector('.phonenumber')
+	const eMail = document.querySelector('.email')
+
+    link.forEach(el => {
+        el.addEventListener('click', () => {
+            langEl.querySelector('.active').classList.remove('active')
+            el.classList.add('active')
+
+            const attr = el.getAttribute('language');
+
+            secureEl.textContent = data[attr].secure;
+            descrEl.textContent = data[attr].summary;
+			payDateEl.textContent = data[attr].paydate;
+			payAmountEl.textContent = data[attr].payamount;
+			chartEl.textContent = data[attr].chart;
+			ipEl.textContent = data[attr].custip;
+			descriptionEl.textContent = data[attr].description;
+			ccInfoEl.textContent = data[attr].ccinfo;
+			ccType.textContent = data[attr].cctype;
+			ccName.textContent = data[attr].ccname;
+			ccAddress.textContent = data[attr].ccaddress;
+			ccZip.textContent = data[attr].cczip;
+			ccNumber.textContent = data[attr].ccnumber;
+			ccExp.textContent = data[attr].ccexp;
+			ccId.textContent = data[attr].ccid;
+			ccWhatIs.textContent = data[attr].ccwhatis;
+			billInfo.textContent = data[attr].billinfo;
+			fName.textContent = data[attr].fname;
+			lName.textContent = data[attr].lname;
+			billAddress.textContent = data[attr].billaddress;
+			billAddress2.textContent = data[attr].billaddress2;
+			billState.textContent = data[attr].state;
+			billCountry.textContent = data[attr].country;
+			billZip.textContent = data[attr].cczip;
+			phoneNumber.textContent = data[attr].phonenumber;
+			eMail.textContent = data[attr].email;
+        })
+    })
+
+    var data = {
+        "english": {
+            "secure": "Secure Payment Form",
+			"summary": "Payment Summary:",
+            "paydate": "Payment Date:",
+			"payamount": "Payment Amount:",
+			"chart": "Chart #:",
+			"custip": "Customer IP:",
+			"description": "Description:",
+			"ccinfo": "Credit Card Information:",
+			"cctype": "Credit Card Type:",
+			"ccname": "Name as on Card:",
+			"ccaddress": "Card Billing Address:",
+			"cczip": "Zip Code:",
+			"ccnumber": "Card Number:",
+			"ccexp": "Card Expiration Date:",
+			"ccid": "Card ID (CVV2/CID) Number:",
+			"ccwhatis": "What is the CardID?",
+			"billinfo": "Billing Information:",
+			"fname": "First Name:",
+			"lname": "Last Name:",
+			"billaddress": "Address:",
+			"billaddress2": "Address 2:",
+			"state": "State:",
+			"country": "Country:",
+			"phonenumber": "Phone Number:",
+			"email": "Email Address:"
+        },
+        "spanish": {
+            "secure": "Formulario de pago seguro",
+            "summary": "Resumen de pago:",
+			"paydate": "Fecha de pago:",
+			"payamount": "Monto del pago:",
+			"chart": "Cuadro #:",
+			"custip": "Cliente IP:",
+			"description": "Descripción:",
+			"ccinfo": "Información de tarjeta de crédito:",
+			"cctype": "Tipo de tarjeta de crédito:",
+			"ccname": "Nombre como en la tarjeta:",
+			"ccaddress": "Dirección de facturación de la tarjeta:",
+			"cczip": "Código postal:",
+			"ccnumber": "Número de tarjeta:",
+			"ccexp": "Fecha de vencimiento de la tarjeta:",
+			"ccid": "Número de identificación de la tarjeta (CVV2/CID):",
+			"ccwhatis": "¿Qué es la tarjeta de identificación??",
+			"billinfo": "Datos de facturación:",
+			"fname": "Primer nombre:",
+			"lname": "Apellido:",
+			"billaddress": "Dirección:",
+			"billaddress2": "Dirección 2:",
+			"state": "Estado:",
+			"country": "País:",
+			"phonenumber": "Número de teléfono:",
+			"email": "Dirección de correo electrónico:"
+        },
+        "portuguese": {
+            "secure": "Formulário de pagamento seguro",
+            "summary": "Resumo do pagamento:",
+			"paydate": "Data de pagamento:",
+			"payamount": "Valor do pagamento:",
+			"chart": "Gráfico #:",
+			"custip": "Cliente IP:",
+			"description": "Descrição:",
+			"ccinfo": "Informação do cartão de crédito:",
+			"cctype": "tipo de cartão de crédito",
+			"ccname": "Nome como no cartão:",
+			"ccaddress": "Endereço de cobrança do cartão:",
+			"cczip": "Código postal:",
+			"ccnumber": "Número do cartão:",
+			"ccexp": "Data de Expiração do Cartão:",
+			"ccid": "Número de identificação do cartão (CVV2/CID):",
+			"ccwhatis": "O que é o CardID?",
+			"billinfo": "Informações de pagamento:",
+			"fname": "Primeiro nome",
+			"lname": "Sobrenome:",
+			"billaddress": "Endereço:",
+			"billaddress2": "Endereço 2:",
+			"state": "Estado:",
+			"country": "País:",
+			"phonenumber": "Número de telefone:",
+			"email": "Endereço de email:"
+        }
+    }
+	//API
+	function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+            {pageLanguage: 'en'},
+            'google_translate_element'
+        )
+    }
+	
+	
+</script>
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> 
+</html>
+
